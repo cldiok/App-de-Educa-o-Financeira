@@ -1,0 +1,126 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investimentos Básicos - Seu Aliado Financeiro</title>
+    <link rel="stylesheet" href="investimentos-basicos.css">
+</head>
+
+<body>
+    <div class="parallax">
+        <div class="hero-text">
+            <h1>Investimentos Básicos</h1>
+            <p>Aprenda os fundamentos para começar a investir com confiança</p>
+        </div>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#tipos-investimentos">Tipos de Investimentos</a></li>
+            <li><a href="#perfil-investidor">Perfil do Investidor</a></li>
+            <li><a href="#primeiros-passos">Primeiros Passos</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section id="introducao" class="course-section">
+            <h2>Introdução aos Investimentos</h2>
+            <p>Nesta aula, você aprenderá os conceitos básicos de investimentos e por que é importante começar a
+                investir.</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://youtu.be/ZyveF3TjTB8?si=aqnEIcvxqxl59H6p" frameborder="0"
+                    allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>Tópicos abordados:</p>
+            <ul>
+                <li>O que são investimentos?</li>
+                <li>Por que investir é importante?</li>
+                <li>Diferença entre poupar e investir</li>
+                <li>O poder dos juros compostos</li>
+            </ul>
+        </section>
+
+        <section id="tipos-investimentos" class="course-section">
+            <h2>Tipos de Investimentos</h2>
+            <p>Conheça os principais tipos de investimentos disponíveis no mercado brasileiro.</p>
+            <ul>
+                <li>Renda Fixa
+                    <ul>
+                        <li>Poupança</li>
+                        <li>CDB</li>
+                        <li>Tesouro Direto</li>
+                    </ul>
+                </li>
+                <li>Renda Variável
+                    <ul>
+                        <li>Ações</li>
+                        <li>Fundos de Investimento</li>
+                        <li>ETFs</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <section id="perfil-investidor" class="course-section">
+            <h2>Perfil do Investidor</h2>
+            <p>Descubra qual é o seu perfil de investidor e como isso afeta suas escolhas de investimento.</p>
+            <ul>
+                <li>Conservador</li>
+                <li>Moderado</li>
+                <li>Arrojado</li>
+            </ul>
+            <p>Faça nosso teste para descobrir seu perfil:</p>
+            <a href="/teste-perfil-investidor" class="cta-button">Fazer Teste de Perfil</a>
+        </section>
+
+        <section id="primeiros-passos" class="course-section">
+            <h2>Primeiros Passos</h2>
+            <p>Aprenda como dar os primeiros passos no mundo dos investimentos.</p>
+            <ol>
+                <li>Organize suas finanças pessoais</li>
+                <li>Defina seus objetivos financeiros</li>
+                <li>Crie uma reserva de emergência</li>
+                <li>Escolha uma corretora</li>
+                <li>Comece com investimentos de baixo risco</li>
+                <li>Diversifique gradualmente</li>
+            </ol>
+            <p>Pronto para começar sua jornada de investimentos?</p>
+            <a href="/abrir-conta" class="cta-button">Abra sua Conta de Investimentos</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Seu Aliado Financeiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('nav a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            const ctaButtons = document.querySelectorAll('.cta-button');
+            ctaButtons.forEach(button => {
+                button.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    alert('Redirecionando para: ' + this.getAttribute('href'));
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
