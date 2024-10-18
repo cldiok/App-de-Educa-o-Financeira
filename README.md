@@ -1,2 +1,2 @@
-# App-de-Educa-o-Financeira
+# App-de-Educação-Financeira
 Site de Finanças e Educação Financeira - Projeto Acadêmico
